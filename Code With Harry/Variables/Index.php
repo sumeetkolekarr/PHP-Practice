@@ -8,7 +8,15 @@
 </head>
 <body>
     <?php
-    
+    echo "PHP Variable <br>";
+    // Variables are Containers
+    // Starts with a $
+    $name = "Bunny";
+    $income = 15000;
+    echo "This guy is $name and his income is Rs. $income <br>";
+    echo "$name is a good Cat <br>";
     ?>
+
+
 </body>
 </html>
