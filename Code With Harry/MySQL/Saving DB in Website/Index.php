@@ -100,7 +100,7 @@
     <div class="container mt-3">
         <h1>Sign Up With your Password to Express your Concerns
         </h1>
-        <form action="/PHP/Code With Harry/Saving DB in Website/Index.php" method="post">
+        <form action="/PHP/Code With Harry/MySQL/Saving DB in Website/Index.php" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp"

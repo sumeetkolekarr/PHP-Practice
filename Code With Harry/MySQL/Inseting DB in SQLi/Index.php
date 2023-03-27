@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "BunnyCat";
+$database = "web_db";
 
 // Create a Connection
 $con = mysqli_connect($servername, $username, $password, $database);
@@ -24,7 +24,7 @@ $age = 1;
 $gender = "Male";
 
 // SQL Query to be executed
-$sql = "INSERT INTO `employees` (`sno`, `name`, `age`, `gender`) VALUES ('', 'Bunny', '2', 'Male')";
+$sql = "INSERT INTO `sign_up` (`Name`, `Email_ID`, `PassWord`) VALUES ('Bunny', 'Bunny@gmail.com', 'Male')";
 $result = mysqli_query($con, $sql);
 
 // Add a new DB in BunnyCat DB
@@ -33,7 +33,7 @@ if($result){
 }
 else{
     echo "The record was not successfully inserted because of this error --> ";
-    // echo mysqli_error($con);
+    echo mysqli_error($con);
 }
 
 
