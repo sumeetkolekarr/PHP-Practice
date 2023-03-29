@@ -57,7 +57,7 @@
         $name = $_POST['name'];
         $email = $_POST['email'];
         $pass = $_POST['Pass'];
-        $desc = $_POST['desc'];
+        $description = $_POST['description'];
         // Submit it to a DataBase
 
         // Connecting to a DataBase 
@@ -70,7 +70,7 @@
         $con = mysqli_connect($servername, $username, $password, $database);
 
         // SQL Query to be executed
-        $sql = "INSERT INTO `sign_up` (`Name`, `Email_ID`, `Password`, `Concern`, `dt`) VALUES ('$name', '$email', '$pass', '$desc', current_timestamp())";
+        $sql = "INSERT INTO `sign_up` (`Name`, `Email_ID`, `Password`, `Concern`, `dt`) VALUES ('$name', '$email', '$pass', '$description', current_timestamp())";
         $result = mysqli_query($con, $sql);
         $a = $result;
 
@@ -120,8 +120,8 @@
                 <input type="password" class="form-control" id="Pass" placeholder="Password" name="Pass" required>
             </div>
             <div class="form-group">
-                <label for="desc">Description</label>
-                <textarea name="desc" id="desc" class="form-control" cols="30" rows="10" required></textarea>
+                <label for="description">Description</label>
+                <textarea name="description" id="description" class="form-control" cols="30" rows="10" required></textarea>
                 <!-- <input type="password" class="form-control" id="Pass" placeholder="Password" name="Pass"> -->
             </div>
 
